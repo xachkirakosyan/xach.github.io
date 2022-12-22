@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+    font-family: 'Manrope';
+}
+.section{
+    width: 1728px;
+    height: 2000px;
+}
+.Main_Page{
+    width: 1016px;
+    margin: 0 auto;
+    color: #4E5667;
+}
+header{
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  gap: 79px;
+  padding: 45px 0 0 0;
+  
+}
+header > .Picstories{
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+}
+.search{
+    width: 644px;
+    display: flex;
+    background: #EBEDF2;
+    border-radius: 12px;
+    padding: 12px 8px 12px 24px;
+}
+.search:hover{
+    background: #E1E2E6;
+}
+.search:active{
+    background: white;
+}
+.search >input{
+    width: 100%;
+    padding-left: 14px;
+    background: transparent;
+    border: 0;
+    outline: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: #989EAB;
+}
+::placeholder{
+    color: #989EAB;
+}
+.search > button{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+
+.Username > p{
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: center;
+    padding: 91px 0 82px 0;
+}
+.Popular_accounts > p{
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 42px;
+}
+
+.All_Profile{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+    padding-bottom: 58px;
+    cursor: pointer;
+}
+.Avatar{
+    width: 92px;
+    height: 92px;
+    border-radius: 18px;
+}
+.Profile_card{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 22px 0px;
+    border: 1px solid #EBEDF2;
+    border-radius: 18px;
+}
+.Profile_info > .username{
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 18px;
+}
+.Profile_info > .Name_Surname{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 16px 0 0 0;
+}
+
+
+.Frame_Hashtag{
+    width: 100%;
+    padding-bottom: 330px;
+}
+.hashtag{
+    width: 100%;
+    list-style: none;
+}
+.hashtag > li{
+    display: inline-block;
+    margin:0 22px 22px 0;
+    padding: 22px 30px;
+    border-radius: 18px;
+    border: 1px solid #EBEDF2;
+}
+
+.hashtag > li > a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #4E5667;
+}
+
+footer{
+    padding: 0  0 58px 0 ;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #989EAB;
+}
+footer > ul >li{
+    padding: 16px 22px;
+    display: inline-block;
+    list-style: none;
+
+}
+footer > ul >li >a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #989EAB;
+}
+footer > ul >li >a:hover{
+    color: rgba(27, 92, 246, 1);
+}
+
+
+
+/* Search Hashtag */
+
+
+
+.Search_Hashtag{
+    width: 1016px;
+    margin: 0 auto;
+    color: #4E5667;
+}
+.Result{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 91px 0;
+    gap: 22px;
+}
+.search_name{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #4E5667;
+}
+.search_name > a{
+    text-decoration: none;
+    color: rgba(27, 92, 246, 1);
+}
+.search_Posts{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #989EAB;
+    cursor: pointer;
+}
+
+/* Search Hashtag    Posts */
+
+
+.Posts{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 34px;
+}
+.Posts_card{
+    width: 100%;
+    padding: 12px;
+    border-radius: 18px;
+    border: 1px solid #EBEDF2;
+}
+.Posts_card:hover{
+    box-shadow: 0px 2px 20px rgba(54, 62, 81, 0.15);
+}
+.Posts_card_img{
+    width: 100%;
+    border-radius: 18px;
+}
+.Posts_card_img > img{
+    width: 100%;
+    cursor: pointer;
+}
+.Posts_card > .text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 12px;
+}
+.Posts_card > .text > a{
+    text-decoration: none;
+    color: rgba(27, 92, 246, 1);
+}
+.Posts_card_like_comments_time{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
+.like_comments{
+   display: flex;
+   align-items: center;
+   gap: 11px;
+}
+.like_comments > a > img{
+    width: 13px;
+    height: 12px;
+    margin-right: 7px;
+}
+.like_comments > a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #989EAB;
+}
+.upload_time{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #989EAB;
+}
+
+/* Search Hashtag   button */
+.button{
+   width: 100%;
+   padding:30px 0 160px 0;
+}
+.button > button{
+    width: 100%;
+    padding: 12px 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #1B5CF6;
+    background: #EDF2FD;
+    border: 1px solid #DEE7FC;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.button > button:hover{
+    background: #DEE7FC;
+}
+.button > button:active{
+    background: #1B5CF6;
+    color: #FFFFFF;
+}
+
+
+
+/* Posts_page  */
+
+
+.Posts_page{
+    width: 1016px;
+    margin: 0 auto;
+    color: #4E5667;
+}
+.Posts_page_card{
+    width: 644px;
+    margin: 54px auto 0 auto;
+}
+.Posts_card{
+    width: 100%;
+    border-radius: 18px;
+    border: 1px solid #EBEDF2;
+}
+.Posts_page_comments{
+   padding: 42px 0 0px 0;
+}
+.Posts_page_comments > p{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 12px;
+}
+.comments_1{
+    display: flex;
+    border: 1px solid #EBEDF2;
+    border-radius: 18px;
+    margin-top: 22px;
+}
+.comments_1_img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    padding: 12px;
+}
+.comments_1_img > img{
+    width: 100%;
+   
+}
+.comments_1_text{
+    padding: 12px;
+}
+.comments_1_text > .nickname{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+.comments_1_text > .p{
+    padding-top: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.comments_1_text > .p > a{
+    text-decoration: none;
+    color: rgba(27, 92, 246, 1);
+}
+
+
+
+ 
